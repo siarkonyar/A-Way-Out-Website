@@ -141,7 +141,7 @@ h1, h2, h3 { color: var(--silver-1); line-height: 1.12; letter-spacing: -0.02em;
   gap: 40px;
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: clamp(36px, 6vw, 68px) clamp(20px, 5vw, 48px) clamp(44px, 7vw, 78px);
+  padding: clamp(24px, 4vw, 48px) clamp(20px, 5vw, 48px) clamp(30px, 5vw, 56px);
 }
 .hero::before {
   content: "";
@@ -185,6 +185,11 @@ h1, h2, h3 { color: var(--silver-1); line-height: 1.12; letter-spacing: -0.02em;
   box-shadow: 0 0 10px rgba(10,132,255,0.6);
 }
 .hero-points strong { color: var(--silver-1); }
+
+.hero-by {
+  font-size: .9rem;
+  color: var(--silver-3);
+}
 
 /* phone mockup */
 .hero-visual { position: relative; display: flex; justify-content: center; }
@@ -451,6 +456,27 @@ h1, h2, h3 { color: var(--silver-1); line-height: 1.12; letter-spacing: -0.02em;
 .footer-brand .brand-mark { width: 28px; height: 28px; }
 .footer-tag { color: var(--silver-2); margin-bottom: 8px; }
 .footer-copy { color: var(--silver-3); font-size: .85rem; }
+.footer-by {
+  display: inline-flex; align-items: baseline; gap: 5px;
+  margin-top: 20px;
+  color: var(--silver-3); font-size: .78rem; text-decoration: none;
+  opacity: .55; transition: opacity .2s ease;
+}
+.footer-by:hover { opacity: 1; }
+.by-hercule { display: inline-flex; align-items: baseline; gap: 2px; }
+.hercule-link {
+  color: #ff4500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(255, 69, 0, 0.5);
+  transition: color .2s ease;
+}
+.hercule-link:hover { color: #ff6a33; }
+.by-hercule-mark {
+  height: .74em; width: auto;
+  transform: translateY(.05em);
+}
+.brand-name .by-hercule-mark { height: .88em; }
 
 /* ============================================================
    Responsive
